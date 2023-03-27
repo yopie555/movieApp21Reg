@@ -8,10 +8,10 @@ import {
 } from 'react-native'
 import React from 'react'
 import Logo from '../assets/movie.png'
-// import { useNavigation } from '@react-navigation/native'
+import { useNavigation } from '@react-navigation/native'
 
 const RegisterScreen = () => {
-    // const navigation = useNavigation();
+    const navigation = useNavigation();
     return (
         <View style={styles.container}>
             <Image source={Logo} style={styles.logo} />
@@ -38,13 +38,14 @@ const RegisterScreen = () => {
                 />
                 <TouchableOpacity
                     style={styles.button}
+                    onPress={() => navigation.navigate('LoginScreen')}
                 >
                     <Text style={styles.textButton}>Register</Text>
                 </TouchableOpacity>
                 <Text style={styles.text}>Already have an account?
                     <Text
                         style={{ fontWeight: 'bold' }}
-                    // onPress={() => navigation.goBack()}
+                        onPress={() => navigation.goBack()}
                     > Sign in</Text>
                 </Text>
             </View>
