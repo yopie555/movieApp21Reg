@@ -10,6 +10,7 @@ import RegisterScreen from './src/RegisterScreen'
 import HomeScreen from './src/HomeScreen'
 import Review from './src/ReviewScreen'
 import Account from './src/AccountScreen'
+import DetailScreen from './src/DetailScreen';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -68,6 +69,7 @@ const App = () => {
         <Stack.Screen name="LoginScreen" component={LoginScreen} />
         <Stack.Screen name="RegisterScreen" component={RegisterScreen} />
         <Stack.Screen name="HomeScreen" component={RootHome} />
+        <Stack.Screen name="DetailScreen" component={DetailScreen} />
       </Stack.Navigator>
     </NavigationContainer>
 
