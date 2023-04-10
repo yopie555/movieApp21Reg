@@ -126,3 +126,6 @@ const AccountScreen = () => {
 }
 
 export default AccountScreen
+
+
+//https://stackoverflow.com/questions/45441217/release-apk-not-updating-with-javascript-code
