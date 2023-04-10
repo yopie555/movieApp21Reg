@@ -95,7 +95,8 @@ const AccountScreen = () => {
             <Image
                 source={{
                     uri:
-                        image.path
+                        image.path ||
+                        'https://cdn.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png',
                 }}
                 style={{
                     width: 200,
